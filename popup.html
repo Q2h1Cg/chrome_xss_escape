@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>XSS ESCAPE</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body style="width: 400px;">
+    <textarea id="txt" style="margin: 2px; height: 200px; width: 400px;"></textarea><br/>&nbsp&nbsp&nbsp&nbsp
+    <select id="s1">
+    <option value="html10">HTML 十进制</option>
+    <option value="html16">HTML 十六进制</option>
+    <option value="htmlencode">HTML 实体编码</option>
+    <option value="jsunicode">Js Unicode</option>
+    <option value="js8">Js 八进制</option>
+    <option value="js16">Js 十六进制</option>
+    <option value="string_fromcharcode">String.fromCharCode</option>
+    <option value="urlencode">Url 编码</option>
+    </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="button" id="x" value="转换" style="height: 25px; width: 80px;"/><br/>
+    <textarea id="result" style="margin: 2px; height: 200px; width: 400px;"></textarea>
+    <script type="text/javascript" src="funcs.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+
+  "name": "xss 编码小工具",
+  "description": "一个用于xss 编码的小工具，我的第一个chrome 插件",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
