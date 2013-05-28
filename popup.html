@@ -1,11 +1,24 @@
 <html>
 <head>
-    <title>XSS ESCAPE</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>XSS ESCAPE</title>
+    <style type="text/css">
+    .taa{
+        margin: 2px;
+        height: 200px;
+        width: 400px;
+    }
+    .btn{
+        height: 25px;
+        width: 80px;
+    }
+    </style>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/base64.js"></script>
 </head>
 <body style="width: 400px;">
-    <textarea id="txt" style="margin: 2px; height: 200px; width: 400px;"></textarea><br/>&nbsp&nbsp&nbsp&nbsp
-    <select id="s1">
+    <textarea id="txt" class="taa"></textarea><br/>&nbsp&nbsp&nbsp&nbsp
+    <select id="slt">
     <option value="html10">HTML 十进制</option>
     <option value="html16">HTML 十六进制</option>
     <option value="htmlencode">HTML 实体编码</option>
@@ -13,10 +26,12 @@
     <option value="js8">Js 八进制</option>
     <option value="js16">Js 十六进制</option>
     <option value="string_fromcharcode">String.fromCharCode</option>
+    <option value="base64">Base64 编码</option>
     <option value="urlencode">Url 编码</option>
-    </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    <input type="button" id="x" value="转换" style="height: 25px; width: 80px;"/><br/>
-    <textarea id="result" style="margin: 2px; height: 200px; width: 400px;"></textarea>
-    <script type="text/javascript" src="funcs.js"></script>
+    </select>&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button id="tran" class="btn">转换</button>&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button id="up" class="btn">结果上移</button><br/>
+    <textarea id="result" class="taa"></textarea>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
