@@ -17,20 +17,22 @@
     <script type="text/javascript" src="js/base64.js"></script>
 </head>
 <body style="width: 400px;">
-    <textarea id="txt" class="taa"></textarea><br/>&nbsp&nbsp&nbsp&nbsp
-    <select id="slt">
-    <option value="html10">HTML 十进制</option>
-    <option value="html16">HTML 十六进制</option>
-    <option value="htmlencode">HTML 实体编码</option>
-    <option value="jsunicode">Js Unicode</option>
-    <option value="js8">Js 八进制</option>
-    <option value="js16">Js 十六进制</option>
-    <option value="string_fromcharcode">String.fromCharCode</option>
-    <option value="base64">Base64 编码</option>
-    <option value="urlencode">Url 编码</option>
-    </select>&nbsp&nbsp&nbsp&nbsp&nbsp
-    <button id="tran" class="btn">转换</button>&nbsp&nbsp&nbsp&nbsp&nbsp
-    <button id="up" class="btn">结果上移</button><br/>
+    <textarea id="txt" class="taa"></textarea>
+    <div>
+        <select id="slt" style="position:relative; left:10px;">
+        <option value="html10">HTML 十进制</option>
+        <option value="html16">HTML 十六进制</option>
+        <option value="htmlencode">HTML 实体编码</option>
+        <option value="jsunicode">Js Unicode</option>
+        <option value="js8">Js 八进制</option>
+        <option value="js16">Js 十六进制</option>
+        <option value="string_fromcharcode">String.fromCharCode</option>
+        <option value="base64">Base64 编码</option>
+        <option value="urlencode">Url 编码</option>
+        </select>
+        <button id="tran" class="btn"  style="position:relative; left:40px;">转换</button>
+        <button id="up" class="btn" style="position:relative; left:60px;">结果上移</button><br/>
+    </div>
     <textarea id="result" class="taa"></textarea>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
